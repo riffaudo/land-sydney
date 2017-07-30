@@ -71,7 +71,7 @@
     "yargs": "^8.0.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js --public",
     "startPublic": "node server.js --public",
     "build": "gulp build",
     "build-watch": "gulp build-watch",
