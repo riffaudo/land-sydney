@@ -9,9 +9,11 @@
   <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Land in Sydney demo</title>
-    <script src="../Build/Cesium/Cesium.js">
-  </script>  
+  <script src="../Build/Cesium/Cesium.js">
+
+  </script>
   <script src="./land.js">
+
   </script>
   <style>
     @import url(../Build/Cesium/Widgets/widgets.css);
@@ -25,6 +27,7 @@
       position: absolute;
       overflow: hidden;
     }
+
     #toolbar {
       margin: 5px;
       padding: 2px 5px;
@@ -41,7 +44,18 @@
   </div>
   <script>
     var viewer = new Cesium.Viewer('cesiumContainer', {
-      baseLayerPicker : false
+      baseLayerPicker: false,
+      animation: false,
+      fullscreenButton: false,
+      geocoder: false,
+      homeButton: false,
+      infoBox: false,
+      sceneModePicker: false,
+      selectionIndicator: false,
+      timeline: false,
+      navigationHelpButton: false,
+      navigationInstructionsInitiallyVisible: false,
+      shadows: true
     });
   </script>
 </body>
