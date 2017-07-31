@@ -56,7 +56,7 @@ function resetToStart() {
 
         orientation: {
             heading: Cesium.Math.toRadians(168.0), // east, default value is 0.0 (north)
-            pitch: Cesium.Math.toRadians(-22),    // default value (looking down)
+            pitch: Cesium.Math.toRadians(-18),    // default value (looking down)
             roll: 6.2830431015953465                             // default value
         }
     });
@@ -66,12 +66,12 @@ function startLanding() {
     resetToStart();
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(151.189726, -33.953802, 100.0),
-        duration: 300,
+        duration: 150,
         maximumHeight: 3000,
         easingFunction: Cesium.EasingFunction.LINEAR_NONE,
         orientation: {
             heading: Cesium.Math.toRadians(168.0), // east, default value is 0.0 (north)
-            pitch: Cesium.Math.toRadians(-21),    // default value (looking down)
+            pitch: Cesium.Math.toRadians(-18),    // default value (looking down)
             roll: 6.2830431015953465                             // default value
         }
     });
