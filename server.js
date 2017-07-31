@@ -9,9 +9,10 @@
 
     var gzipHeader = Buffer.from('1F8B08', 'hex');
 
+    var port = process.env.PORT || 8080;
     var yargs = require('yargs').options({
         'port' : {
-            'default' : 8080,
+            'default' : port,
             'description' : 'Port to listen on.'
         },
         'public' : {
